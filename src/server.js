@@ -26,6 +26,7 @@ app.route({
 		};
 
 		request.originalUrl = request.raw.url;
+		request.socket = request.raw.connection;
 
 		reply.setHeader = reply.header;
 		reply.writeHead = reply.code;
